@@ -41,7 +41,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input1+'&appid=546b32
   
  
   var p=document.getElementById('tp');
-  p.innerHTML="<span> The  TEMPRATURE of city "+ input1 +" is </span>"+wind1speed.toFixed(2)+"°C.";
+  p.innerHTML="<span> The  TEMPERATUR of city "+ input1 +" is </span>"+wind1speed.toFixed(2)+"°C.";
    
  
  
