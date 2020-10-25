@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>TEMPRATURE </title>
+    <title>POWER PREDICTION</title>
     <script src="index.js"></script>
   </head>
   <!-- <body>
@@ -30,8 +30,6 @@
 
 
     
-   
-    
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
   <a class="navbar-brand" href="#">  <img src="./logo/logo_white.png"  height="40" alt="" srcset=""></a>
@@ -45,8 +43,9 @@
       <a class="nav-link" href="temprature.html">TEMPERATURE <span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item active">
-      <a class="nav-link" href="windpower.html"> POWER PREDICTION (BASED ON WIND SPEED)<span class="sr-only">(current)</span></a>
-    </li>
+        <a class="nav-link" href="windpower.html"> POWER PREDICTION (BASED ON WIND SPEED)<span class="sr-only">(current)</span></a>
+      </li>
+     
     <!-- <li class="nav-item active">
       <a class="nav-link" href="#"> CORDINATES<span class="sr-only">(current)</span></a>
     </li> -->
@@ -61,36 +60,50 @@
 
     <br>
     <br>
-    <h1 style="text-align: center;" >TEMPERATURE</h1>
+    <h1 style="text-align: center;" >POWER PREDICTION USING REGRESSION OF WINDSPEED AND LV POWER</h1>
     <br>
     <br>
 
+    <h6 style="text-align: center;">This prediction is based on machine learning algorithm of regression which is trained using
+     5000  <a href="https://www.kaggle.com/theforcecoder/wind-power-forecasting"> datesets</a>   .Data has been recorded from January 2018 till March 2020. 
+    
+     <br>
+
+
+    </h6>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="container">
     <form >
 
         <div class="form-group">
-            <label for="exam">City Name</label>
-            <input type="text" class="form-control" id="city" placeholder="eg:Kurnool">
+            <label for="exam">Wind Speed(m/s)</label>
+            <input type="number" class="form-control" id="city" placeholder="eg:5">
             <br>
-            <button onclick="temprature()"  style="text-align: center;"    type="button" class="btn btn-dark">Submit</button>
+            <button         onclick="windpower()"     style="text-align: center;"    type="button" class="btn btn-dark">Submit</button>
             </div>
 
     </form>
 
-    <div  > <div class="card">
+
+
+<div  > <div class="card">
   
-      <div style="background-color: cornflowerblue;" class="card-body">
-        
-        <p        style="text-align: center;font-family: 'Times New Roman', Times, serif; color: cornsilk; font-size: larger; "    class="card-text" id="tp"></p>
-        
-      </div>
-    </div></div></div>
+  <div style="background-color: cornflowerblue;" class="card-body">
     
-</div>
+    <p        style="text-align: center;font-family: 'Times New Roman', Times, serif; color: cornsilk; font-size: larger; "    class="card-text" id="ws"></p>
+    
+  </div>
+</div></div></div>
+
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
   </body>
 </html>

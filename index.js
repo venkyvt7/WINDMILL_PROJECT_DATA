@@ -47,3 +47,51 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input1+'&appid=546b32
  
   });
 };
+
+
+
+
+
+
+function windpower()
+{
+
+
+
+  var input1=document.getElementById('city').value;
+ if(input1>=12)
+ {
+
+  var p=document.getElementById('ws'); 
+  p.innerHTML="<span> The  PREDICTION OF POWER IS  3500 kw (kilowatt) </span>";
+
+
+
+ }
+
+  else if(input1<3)
+  {
+    var p=document.getElementById('ws'); 
+    p.innerHTML="<span> The  PREDICTION OF POWER IS  0 kw (kilowatt) </span>";
+
+
+
+
+  }
+ else
+ {
+var m=283.40;
+var z=m*input1-834.4;
+ z = z.toFixed(7);
+var p=document.getElementById('ws'); 
+p.innerHTML="<span> The  PREDICTION OF POWER IS " + z +" kw (kilowatt) </span>";
+
+
+ }
+
+
+    
+  
+
+
+ }
